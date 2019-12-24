@@ -4,7 +4,7 @@ Abrir puerto 80
 
 conectarse con
 
-`ssh -i .\jairo.pem ec2-user@ec2-35-180-90-169.eu-west-3.compute.amazonaws.com`
+`ssh -i .\man.pem ec2-user@ec2-52-47-196-164.eu-west-3.compute.amazonaws.com
 
 Install git
 
@@ -16,20 +16,15 @@ Install npm and node
 
 `sudo yum install nodejs`
 
-`mkdir git`
+`git clone https://github.com/mlaina/man`
 
-`cd git`
-
-`git clone https://github.com/mlaina/jairo`
-
-`cd jairo`
+`cd man`
 
 `npm install`
 
 `npx http-server`
 
 `curl http://localhost`
-
 
 Para mantener un hilo del servidor corriendo utilizar forever
 
