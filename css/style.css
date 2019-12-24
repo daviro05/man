@@ -123,7 +123,7 @@ h1{
   .topnav .icon{
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -134,7 +134,7 @@ h1{
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -155,12 +155,12 @@ h1{
 
 
 .logo img{
-    width: 50px;
+    width: 30px;
 }
 
 a.logo {
     padding-top: 0px;
-    margin-top: 30px;
+    margin-top: 10px;
     padding-bottom: 0px;
     float: left;
 }
@@ -182,8 +182,8 @@ a.logo:hover {
 #portada{
     width:100%;
     margin-top:50px;
-    background-image: url(../images/portada_1.png);
-    background-size: 750px, auto, cover;
+    background-image: url(../images/UN10.jpg);
+    background-size: 300px, auto, cover;
     background-position: center 60px;
     background-repeat: no-repeat;
     content: "";
@@ -193,6 +193,7 @@ a.logo:hover {
 }
 
 
+
 #portada div{
     height: 450px;
     float: left;
@@ -200,8 +201,8 @@ a.logo:hover {
 
 @media (max-width: 736px){
     #portada{
-        background-image: url(../images/portada.png);
-        background-size: 450px, auto, cover;
+        background-image: url(../images/UN10.jpg);
+        background-size: 300px, auto, cover;
     }
     
     #portada div{
@@ -299,7 +300,6 @@ svg {
 .temp-image img{
   border-radius: 0 10px 10px 0;
   float: right;
-  height: 100%;
 }
 
 
@@ -307,7 +307,6 @@ svg {
   .temp-text {
     width: 100%;
     text-align: center;
-    padding: 2em;
     height: 100%;
     float: inherit;
   }

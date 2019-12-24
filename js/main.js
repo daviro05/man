@@ -8,7 +8,7 @@ function menuResponsive() {
     x.className = "topnav";
   }
 }
-
+/*
 theGallery("colores");
 theGallery("geometria");
 theGallery("texturas");
@@ -120,4 +120,4 @@ function theGallery(section){
           processScroll();
           addEventListener('scroll',processScroll);
       
-      }(this);
+      }(this);*/
