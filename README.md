@@ -4,7 +4,7 @@ Abrir puerto 80
 
 conectarse con
 
-`ssh -i .\man.pem ec2-user@ec2-52-47-196-164.eu-west-3.compute.amazonaws.com
+`ssh -i .\man.pem ec2-user@ec2-52-47-196-164.eu-west-3.compute.amazonaws.com`
 
 Install git
 
