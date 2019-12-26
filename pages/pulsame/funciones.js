@@ -1,17 +1,6 @@
 function guardarPuntuacion(){
-
-    console.log("Entra");
-    var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var fichero = fso.OpenTextFile("puntuaciones.txt", 8, true);
-
-    var record = getRecord();
-
-    fichero.writeline(record);
-
-    fichero.Close();
-
-
-	/*console.log('entra');
+    
+	console.log('entra');
 	//Mediante esta funcion enviamos los datos a la funcion de php de guardar.php
     //var person = prompt("Nombre", "");
 
@@ -22,7 +11,7 @@ function guardarPuntuacion(){
 	       data: {"puntos" :record},
 	       	       success: function(data){
 	       }
-	    });*/
+	    });
 }
 
 function leerPuntuacion(){
