@@ -1,14 +1,16 @@
-var fs = require('fs');
-
 function guardarPuntuacion(){
+
+    console.log("Entra");
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var fichero = fso.OpenTextFile("puntuaciones.txt", 8, true);
 
     var record = getRecord();
 
-    fs.appendFile("puntuaciones.txt",record,(error) =>{
-        if(error){
-            throw error;
-        }
-    })
+    fichero.writeline(record);
+
+    fichero.Close();
+
+
 	/*console.log('entra');
 	//Mediante esta funcion enviamos los datos a la funcion de php de guardar.php
     //var person = prompt("Nombre", "");
