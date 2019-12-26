@@ -1,5 +1,15 @@
+var fs = require('fs');
+
 function guardarPuntuacion(){
-	console.log('entra');
+
+    var record = getRecord();
+
+    fs.appendFile("puntuaciones.txt",record,(error) =>{
+        if(error){
+            throw error;
+        }
+    })
+	/*console.log('entra');
 	//Mediante esta funcion enviamos los datos a la funcion de php de guardar.php
     //var person = prompt("Nombre", "");
 
@@ -10,18 +20,26 @@ function guardarPuntuacion(){
 	       data: {"puntos" :record},
 	       	       success: function(data){
 	       }
-	    });
+	    });*/
 }
 
 function leerPuntuacion(){
 
-    $.ajax({
-       url: "leer.php",
-       type: "post",
-       data: "data",
-       success: function(data){
-           $("#puntuaciones").html(data);
-           record = data;
-       }
-    });
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+      record = this.responseText;
+      document.getElementById("puntuaciones").innerHTML = record;
+      
+    }
+  };
+  /* Especificamos la solicitud. Método .open
+  * - GET/POST
+  * - Archivo: jpg, xml, txt, etc.
+  * - Método de envio: true, false. true = metodo asincrono.
+  */
+  xhr.open("GET","puntuaciones.txt",true);
+  // .send: envia solicitud al servidor.
+  // Si utilizamos POST debemos pasar los datos por parámetro.
+  xhr.send();
 }

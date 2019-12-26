@@ -1,18 +1,16 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Pulsame</title> 
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="funciones.js"></script>
 </head>
 <body>
 <script language="javascript"> 
-//window.onload=comenzar;
 
 var i = 0;
-var totalTiempo=10;
+var totalTiempo=5;
 var record;
 leerPuntuacion();
 
@@ -46,11 +44,9 @@ function updateReloj()
   }
 }
 
-
 function getRecord(){
   return record;
 }
-
 
 function reiniciar(){
   i = 0;
@@ -60,7 +56,8 @@ function reiniciar(){
   btn.value = "Pulsa"; 
   leerPuntuacion();
   boton.disabled = false;
-} 
+}
+
 </script> 
 
 
@@ -73,11 +70,13 @@ function reiniciar(){
 </div>
 
 <div id="record">
-      <center>RECORD: <span id="puntuaciones"></span></center>
+      <center>RÉCORD: <span id="puntuaciones"></span></center>
 </div> 
 
 <div id="volver">
   <center><a id="record" href="../../index.html">Volver a Cuéntame Man</a></center>
 </div>
+
 </body>
+
 </html>
