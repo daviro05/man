@@ -182,7 +182,7 @@ a.logo:hover {
 #portada{
     width:100%;
     margin-top:50px;
-    background-image: url(../images/UN10.jpg);
+    background-image: url(../images/favicon.png);
     background-size: 300px, auto, cover;
     background-position: center 60px;
     background-repeat: no-repeat;
